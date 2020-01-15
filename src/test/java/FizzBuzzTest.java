@@ -8,9 +8,9 @@ public class FizzBuzzTest {
 
     @ParameterizedTest(name = "expected{1} given {0}")
     @CsvSource({
-          "3,fizz",
-          "5,buzz",
-          "15,fizzbuzz",
+          "3,Fizz",
+          "5,Buzz",
+          "15,FizzBuzz",
     })
     void test(int num,String expected){
         Assertions.assertEquals(FizzBuzz.print(num),expected);
